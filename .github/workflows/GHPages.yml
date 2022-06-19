@@ -1,0 +1,24 @@
+name: GHPages
+
+on:
+  workflow_dispatch: null
+  push:
+    branches: [main]
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - name: Install And Build
+      run: |+
+        cd website
+        npm install
+        npm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_PAT }}
+        publish_dir: ./out
+        force_orphan: true
