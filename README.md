@@ -6,7 +6,7 @@ The AST explorer provides following code parsers:
   - [@wxml/parser](https://github.com/wxmlfile/wxml-parser)
 
 <a href="https://wxmlfile.github.io/explorer">
-  <img src="https://github.com/wxmlfile/explorer/blob/assets/wxml-explorer.png" align="center" />
+  <img src="./assets/wxml-explorer.png" width="700px" align="center" />
 </a>
 
 ## License
