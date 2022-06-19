@@ -1,4 +1,22 @@
- <view class="search-contianer">
+<!-- wxs -->
+<wxs module="m1">
+var msg = "hello world";
+
+module.exports.message = msg;
+</wxs>
+<view> {{m1.message}} </view> 
+
+<!-- import -->
+<import src="item.wxml"/>
+<template is="item" data="{{text: 'forbar'}}"/>
+
+<!-- include -->
+<include src="header.wxml"/>
+<view> body </view>
+<include src="footer.wxml"/>
+
+
+<view class="search-contianer">
   <view class="search" style="height:{{navHeight}}px;padding-top:{{navTop}}px">
     <view class="search-title" src="../../images/actLogo/ytlogo.png">
       {{mallName}}
@@ -10,7 +28,6 @@
       disabled
       value="{{name}}"
       bindinput="bindinput"
-      bindtap="goSearch">
-    </input>
+      bindtap="goSearch" />
   </view>
 </view>
