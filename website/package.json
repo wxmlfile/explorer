@@ -1,13 +1,13 @@
 {
   "name": "astexplorer",
   "version": "2.0.0",
-  "description": "Online demo of various parsers",
+  "description": "Online demo of wxml parsers",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/fkling/esprima_ast_explorer.git"
+    "url": "https://github.com/wxmlfile/explorer"
   },
-  "author": "Felix Kling",
+  "author": "iChenLei",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-transform-runtime": "^7.16.0",
